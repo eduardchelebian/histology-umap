@@ -16,7 +16,6 @@ from matplotlib.colors import rgb2hex
 
 
 def create_dataloader(patch_path, num_workers):
-
     transforms = torchvision.transforms.Compose([
         torchvision.transforms.ToTensor(),
         torchvision.transforms.Normalize(
@@ -24,12 +23,10 @@ def create_dataloader(patch_path, num_workers):
             std=lightly.data.collate.imagenet_normalize['std'],
         )
     ])
-
     dataset = lightly.data.LightlyDataset(
         input_dir=patch_path,
         transform=transforms
     )
-
     dataloader = torch.utils.data.DataLoader(
         dataset,
         batch_size=1,
@@ -38,7 +35,6 @@ def create_dataloader(patch_path, num_workers):
         num_workers=num_workers,
         persistent_workers=True
     )
-
     return dataloader
                 
 
@@ -86,7 +82,6 @@ def load_model(imagenet_weights, model_path):
 
 def generate_umap(backbone, patch_path, num_workers):
     backbone.eval()
-
     dataloader = create_dataloader(patch_path, num_workers)
     embeddings, filenames = extract_features(backbone, dataloader)
 
@@ -113,3 +108,4 @@ def generate_umap(backbone, patch_path, num_workers):
 
     pd.DataFrame(np.hstack([np.array([components[:,0], components[:,1], pos_x, pos_y]).transpose(), hex_feat]),
             columns=['UMAP1', 'UMAP2','x', 'y', 'color']).to_csv(os.path.join(patch_path, 'UMAP.csv'))
+    
