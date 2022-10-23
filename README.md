@@ -36,7 +36,7 @@ num_workers (int): how many subprocesses to use for data loading. 0 means that t
 
 We provide the `visualize_results.ipynb` notebook to visualize the overlay of the UMAP colors and the reduced dimensionality space. But we recommend using TissUUmaps for visualization, as it allows interactive selection of regions between the histology and the UMAP spaces. You can download it visiting [the official website](https://tissuumaps.github.io/download/) and make sure to active the `Feature_Space` plugin.
 
-`[insert example image]` 
+`[insert example gif]` 
 
 ## Applications
 
