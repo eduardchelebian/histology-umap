@@ -40,7 +40,7 @@ We provide the `visualize_results.ipynb` notebook to visualize the overlay of th
 
 ## Applications
 
-This approach is inspired by the spatial-omics field, where one already has coordinates representing gene expression and thus can directly extract features from the coordinates. If you are interested in such approaches, you can watch the (https://tissuumaps.github.io/tutorials/#cnn)[tutorial video] created with that application in mind.
+This approach is inspired by the spatial-omics field, where one already has coordinates representing gene expression and thus can directly extract features from the coordinates. If you are interested in such approaches, you can watch the [tutorial video](https://tissuumaps.github.io/tutorials/#cnn) created with that application in mind.
 
 ## Citations
 These ideas were used in the following papers:
