@@ -32,7 +32,19 @@ model_path (str): if imagenet_weights=False, specify your own .ckpt file
 num_workers (int): how many subprocesses to use for data loading. 0 means that the data will be loaded in the main process
 ```
 
-# Citations
+## Visualization
+
+We provide the `visualize_results.ipynb` notebook to visualize the overlay of the UMAP colors and the reduced dimensionality space. But we recommend using TissUUmaps for visualization, as it allows interactive selection of regions between the histology and the UMAP spaces. You can download it visiting [the official website](https://tissuumaps.github.io/download/) and make sure to active the `Feature_Space` plugin.
+
+`[insert example image]` 
+
+## Applications
+
+This approach is inspired by the spatial-omics field, where one already has coordinates representing gene expression and thus can directly extract features from the coordinates. If you are interested in such approaches, you can watch the (https://tissuumaps.github.io/tutorials/#cnn)[tutorial video] created with that application in mind.
+
+## Citations
+These ideas were used in the following papers:
+
 ```
 @article{chelebian2021morphological,
   title={Morphological Features Extracted by AI Associated with Spatial Transcriptomics in Prostate Cancer},
