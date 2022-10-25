@@ -5,7 +5,7 @@ This repository contains the code for:
 2. Reducing their dimensionality using Uniform Manifold Approximation and Projection for Dimension Reduction (UMAP) to 3 components
 3. Mapping the three dimensional features to RGB space
 
-`[insert example image]` 
+![example_UMAP](example.PNG?raw=true)
 
 ## How to run
 
