@@ -56,4 +56,11 @@ These ideas were used in the following papers:
   year={2021},
   publisher={MDPI}
 }
+
+@article{chelebian2022seeded,
+  title={Seeded iterative clustering for histology region identification},
+  author={Chelebian, Eduard and Ciompi, Francesco and W{\"a}hlby, Carolina},
+  journal={Learning Meaningful Representations of Life, NeurIPS 2022},
+  year={2022}
+}
 ```
